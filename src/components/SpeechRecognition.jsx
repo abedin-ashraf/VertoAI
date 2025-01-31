@@ -23,7 +23,7 @@ const SpeechRecognitionComponent = ({ setSourceText }) => {
         <div>
             <IconMicrophone
                 size={22}
-                className="text-gray-400"
+                className="text-white"
                 onClick={handleVoiceRecording}
             />
         </div>

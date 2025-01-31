@@ -10,7 +10,7 @@ const LanguageSelector = ({
         className="cursor-pointer rounded-full space-x-1 pl-2
    bg-[#000000] flex items-center flex-row"
     >
-        <IconLanguage size={20} />
+        <IconLanguage className="text-white" size={20} />
         <select
             value={selectedLanguage}
             onChange={(e) => setSelectedLanguage(e.target.value)}

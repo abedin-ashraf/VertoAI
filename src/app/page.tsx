@@ -81,15 +81,6 @@ const Home: React.FC = () => {
     // Implement dislike logic
   };
 
-  const handleFavorite = () => {
-    setFavorite(!favorite);
-    if (!favorite) {
-      localStorage.setItem("favoriteTranslation", targetText);
-    } else {
-      localStorage.removeItem("favoriteTranslation");
-    }
-  };
-
   const handleAudioPlayback = (text: string) => {
     const utterance = new SpeechSynthesisUtterance(text);
     window.speechSynthesis.speak(utterance);
@@ -124,12 +115,13 @@ const Home: React.FC = () => {
                     }
                     placeholder="Source Language"
                   />
-                  <div className="flex flex-row justify-between w-full">
+                  <div className="flex flex-row justify-between w-full mt-3">
                     <span className="cursor-pointer flex space-x-2 flex-row">
                       <SpeechRecognitionComponent
                         setSourceText={setSourceText}
                       />
                       <IconVolume
+                        className="text-white"
                         size={22}
                         onClick={() => handleAudioPlayback(sourceText)}
                       />
@@ -149,7 +141,7 @@ const Home: React.FC = () => {
                     onChange={() => { }}
                     placeholder="Target Language"
                   />
-                  <div className="flex flex-row justify-between w-full">
+                  <div className="flex flex-row justify-between w-full mt-3">
                     <span className="cursor-pointer flex items-center space-x-2 flex-row">
                       <LanguageSelector
                         selectedLanguage={selectedLanguage}
@@ -157,22 +149,19 @@ const Home: React.FC = () => {
                         languages={languages}
                       />
                       <IconVolume
+                        className="text-white"
                         size={22}
                         onClick={() => handleAudioPlayback(targetText)}
                       />
                     </span>
                     <div className="flex flex-row items-center space-x-2 pr-4 cursor-pointer">
-                      <IconCopy size={22} onClick={handleCopyToClipboard} />
+                      <IconCopy className="text-white" size={22} onClick={handleCopyToClipboard} />
                       {copied && (
                         <span className="text-xs text-green-500">Copied!</span>
                       )}
-                      <IconThumbUp size={22} onClick={handleLike} />
-                      <IconThumbDown size={22} onClick={handleDislike} />
-                      <IconStar
-                        size={22}
-                        onClick={handleFavorite}
-                        className={favorite ? "text-yellow-500" : ""}
-                      />
+                      <IconThumbUp className="text-white" size={22} onClick={handleLike} />
+                      <IconThumbDown className="text-white" size={22} onClick={handleDislike} />
+
                     </div>
                   </div>
                 </div>
