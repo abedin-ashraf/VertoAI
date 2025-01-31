@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mastra/core": "^0.1.27-alpha.82",
     "@tabler/icons-react": "^3.29.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "15.1.6",
