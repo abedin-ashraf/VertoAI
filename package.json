@@ -15,7 +15,9 @@
     "next": "15.1.6",
     "preline": "^2.7.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-speech-recognition": "^3.10.0",
+    "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
     "@types/node": "^20",

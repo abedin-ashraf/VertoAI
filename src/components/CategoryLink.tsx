@@ -9,12 +9,10 @@ import {
 } from "@tabler/icons-react";
 
 const categories = [
-    { icon: IconBat, label: "Bird Checker", url: "https://bird-checker.vercel.app/" },
-    { icon: IconSpeakerphone, label: "Audiofeed", url: "https://audiofeed.ai/" },
-    { icon: IconGrain, label: "OG", url: "https://openapi-spec-writer.vercel.app/" },
-    { icon: IconCoinBitcoinFilled, label: "CryptoBot", url: "https://crypto-chatbot-xi.vercel.app/" },
-    { icon: IconWriting, label: "Journaling", url: "https://journaling.example.com" },
-    { icon: IconMoodSmile, label: "Communication", url: "https://communication.example.com" },
+    { icon: IconBat, label: "PayFlow", url: "https://payflow.vercel.app/" },
+    { icon: IconSpeakerphone, label: "BrainNest", url: "https://brain-nest-frontend.vercel.app/" },
+    { icon: IconGrain, label: "PenCraft", url: "https://pencraft.vercel.app/" }
+
 ];
 
 const CategoryLink: React.FC = () => {
