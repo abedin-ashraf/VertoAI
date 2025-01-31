@@ -24,12 +24,20 @@ const Home: React.FC = () => {
   const [copied, setCopied] = useState<boolean>(false);
   const [favorite, setFavorite] = useState<boolean>(false);
   const [languages] = useState<string[]>([
-    "English",
-    "Spanish",
-    "Hindi",
-    "French",
-    "German",
-    "Chinese",
+    "English", "Mandarin Chinese", "Hindi", "Spanish", "French",
+    "Arabic", "Bengali", "Portuguese", "Russian", "Urdu",
+    "Japanese", "German", "Swahili", "Marathi", "Telugu",
+    "Turkish", "Tamil", "Vietnamese", "Italian", "Korean",
+    "Hausa", "Thai", "Polish", "Persian (Farsi)", "Dutch",
+    "Ukrainian", "Yoruba", "Malay", "Igbo", "Gujarati",
+    "Kannada", "Amharic", "Oromo", "Burmese", "Tagalog",
+    "Pashto", "Sindhi", "Romanian", "Cebuano", "Azerbaijani",
+    "Hungarian", "Greek", "Serbo-Croatian", "Czech", "Belarusian",
+    "Bulgarian", "Zulu", "Malayalam", "Haitian Creole", "Khmer",
+    "Sinhala", "Quechua", "Hebrew", "Lao", "Mongolian",
+    "Armenian", "Tigrinya", "Maithili", "Slovak", "Lithuanian",
+    "Albanian", "Bashkir", "Kazakh", "Bosnian", "Georgian",
+    "Luxembourgish", "Macedonian", "Tajik", "Uzbek", "Kurdish"
   ]);
   const [selectedLanguage, setSelectedLanguage] = useState<string>("German");
 
